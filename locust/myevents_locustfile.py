@@ -5,4 +5,4 @@ class MyEventsUser(HttpUser):
 
     @task
     def view_my_events(self):
-        self.client.get("/my-events")
+        self.client.get("/my-events?user=locust_user")
